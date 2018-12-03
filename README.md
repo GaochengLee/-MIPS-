@@ -15,3 +15,6 @@
 6. sw
 7. beq
 8. j
+
+如果有帮助 点个星
+if it help you, please start.
