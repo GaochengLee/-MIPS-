@@ -1,0 +1,99 @@
+C:/Users/hasee/Desktop/MIPSwork/im.v {1 {vlog -work work -novopt C:/Users/hasee/Desktop/MIPSwork/im.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module im
+
+Top level modules:
+	im
+
+} {} {}} C:/Users/hasee/Desktop/MIPSwork/extender.v {1 {vlog -work work -novopt C:/Users/hasee/Desktop/MIPSwork/extender.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module extender
+
+Top level modules:
+	extender
+
+} {} {}} C:/Users/hasee/Desktop/MIPSwork/dm.v {1 {vlog -work work -novopt C:/Users/hasee/Desktop/MIPSwork/dm.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module dm
+
+Top level modules:
+	dm
+
+} {} {}} C:/Users/hasee/Desktop/MIPSwork/mips.v {1 {vlog -work work -novopt C:/Users/hasee/Desktop/MIPSwork/mips.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module mips
+
+Top level modules:
+	mips
+
+} {} {}} C:/Users/hasee/Desktop/MIPSwork/npc.v {1 {vlog -work work -novopt C:/Users/hasee/Desktop/MIPSwork/npc.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module npc
+
+Top level modules:
+	npc
+
+} {} {}} C:/Users/hasee/Desktop/MIPSwork/alu.v {1 {vlog -work work -novopt C:/Users/hasee/Desktop/MIPSwork/alu.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} C:/Users/hasee/Desktop/MIPSwork/mux.v {1 {vlog -work work -novopt C:/Users/hasee/Desktop/MIPSwork/mux.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module mux
+
+Top level modules:
+	mux
+
+} {} {}} C:/Users/hasee/Desktop/MIPSwork/pc.v {1 {vlog -work work -novopt C:/Users/hasee/Desktop/MIPSwork/pc.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module pc
+
+Top level modules:
+	pc
+
+} {} {}} C:/Users/hasee/Desktop/MIPSwork/IFU.v {1 {vlog -work work -novopt C:/Users/hasee/Desktop/MIPSwork/IFU.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module ifu
+
+Top level modules:
+	ifu
+
+} {} {}} C:/Users/hasee/Desktop/MIPSwork/analysis.v {1 {vlog -work work -novopt C:/Users/hasee/Desktop/MIPSwork/analysis.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module analysis
+
+Top level modules:
+	analysis
+
+} {} {}} C:/Users/hasee/Desktop/MIPSwork/RegFile.v {1 {vlog -work work -novopt C:/Users/hasee/Desktop/MIPSwork/RegFile.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module regfile
+
+Top level modules:
+	regfile
+
+} {} {}} C:/Users/hasee/Desktop/HelloWorld.v {1 {vlog -work work -novopt C:/Users/hasee/Desktop/HelloWorld.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module regfile
+
+Top level modules:
+	regfile
+
+} {} {}} C:/Users/hasee/Desktop/MIPSwork/testIFU.v {1 {vlog -work work -novopt C:/Users/hasee/Desktop/MIPSwork/testIFU.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module testIFU
+
+Top level modules:
+	testIFU
+
+} {} {}} C:/Users/hasee/Desktop/MIPSwork/ctrl.v {1 {vlog -work work -novopt C:/Users/hasee/Desktop/MIPSwork/ctrl.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module ctrl
+
+Top level modules:
+	ctrl
+
+} {} {}}

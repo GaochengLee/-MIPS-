@@ -1,0 +1,131 @@
+module ctrl(instruct, RegDst, ALUSrc, MemtoReg, RegWrite, MemWrite, nPC_sel, ExtOp, JumpCtr, ALUctr);
+    input [31:0] instruct;
+    output  RegDst;
+    output reg RegWrite;
+    output reg ALUSrc;
+    output reg MemtoReg;
+    output reg MemWrite;
+    output reg nPC_sel;
+    output reg ExtOp;
+    output reg JumpCtr;
+    output reg [3:0] ALUctr;
+    
+    parameter R = 6'b000000,
+              LW = 6'b100011,
+              SW = 6'b101011,
+              BEQ = 6'b000100,
+              ORI = 6'b001101,
+              J = 6'b000010,
+              LUI = 6'b001111;
+              
+              
+    wire [5:0] func = instruct[5:0];
+    wire [5:0] opcode = instruct[31:26];
+    
+    initial
+      case (opcode)
+        R : begin
+          if (func == 100001) begin
+            ALUctr <= 4'b0010;
+            
+            RegDst = 1;
+            ALUSrc = 0;
+            MemtoReg = 0;
+            RegWrite = 1;
+            MemWrite = 0;
+            nPC_sel = 0;
+            ExtOp = 0;
+            JumpCtr = 0;
+          end
+          else begin
+            ALUctr <= 4'b0110;
+            
+            RegDst = 1;
+            ALUSrc = 0;
+            MemtoReg = 0;
+            RegWrite = 1;
+            MemWrite = 0;
+            nPC_sel = 0;
+            ExtOp = 0;
+            JumpCtr = 0;
+          end
+        end
+        LW : begin
+          ALUctr <= 4'b0010;
+          
+            RegDst = 0;
+            ALUSrc = 1;
+            MemtoReg = 0;
+            RegWrite = 1;
+            MemWrite = 0;
+            nPC_sel = 0;
+            ExtOp = 0;
+            JumpCtr = 0;
+        end
+        SW : begin
+          ALUctr <= 4'b0010;
+          
+            RegDst = 0;
+            ALUSrc = 1;
+            MemtoReg = 0;
+            RegWrite = 1;
+            MemWrite = 0;
+            nPC_sel = 0;
+            ExtOp = 0;
+            JumpCtr = 0;
+        end
+        BEQ : begin
+          ALUctr <= 4'b0110;
+          
+          RegDst = 0;
+          ALUSrc = 0;
+          MemtoReg = 0;
+          RegWrite = 0;
+          MemWrite = 0;
+          nPC_sel = 1;
+          ExtOp = 0;
+          JumpCtr = 0;
+        end
+        ORI : begin
+          ALUctr = 4'b0001;
+          
+          RegDst = 0;
+          ALUSrc = 1;
+          MemtoReg = 0;
+          RegWrite = 1;
+          MemWrite = 0;
+          nPC_sel = 0;
+          ExtOp = 0;
+          JumpCtr = 0;
+        end
+        J : begin
+          ALUctr = 4'b0000;
+          
+          RegDst = 0;
+          ALUSrc = 0;
+          MemtoReg = 0;
+          RegWrite = 0;
+          MemWrite = 0;
+          nPC_sel = 0;
+          ExtOp = 0;
+          JumpCtr = 1;
+        end
+        LUI : begin
+          ALUctr = 4'b1010;
+          
+          RegDst = 0;
+          ALUSrc = 1;
+          MemtoReg = 0;
+          RegWrite = 1;
+          MemWrite = 0;
+          nPC_sel = 0;
+          ExtOp = 0;
+          JumpCtr = 0;
+        end
+    endcase
+      
+endmodule
+          
+          
+        
+  

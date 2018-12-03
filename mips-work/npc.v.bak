@@ -1,0 +1,15 @@
+module npc(npc_sel, zero, imm, pc, npcout);
+  input npc_sel, zero;
+  input [15:0] imm;
+  input [29:0] pc;
+  output [29:0] npcout;
+  
+  wire [29:0] t0, t1, immext;
+  
+  assign immext = (imm[15] == 0) ? (14'b0, imm) : (14'hffff, imm);
+  assign t0 = pc + 1;
+  assign t1 = t0 + immext;
+  
+  assign npcout = (npc_sel && zero) ? t1 : t0;
+  
+endmodule

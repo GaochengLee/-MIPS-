@@ -1,0 +1,107 @@
+Wed Nov 28 19:45:46 ?????? 2018
+Trace back: can't read "cmdListsWinData(0,List|Windows,state)": no such element in array
+    while executing
+"lreplace $cmdListsWinData($id,$cmdName,state) $clIdx $clIdx"
+    (procedure "CmdControl::setCmdListItem" line 116)
+    invoked from within
+"CmdControl::setCmdListItem List|Windows $i {} -delete"
+    (procedure "deleteFromWindowList" line 14)
+    invoked from within
+"deleteFromWindowList $id"
+    (procedure "::HTE::Editor::destroyWindow" line 94)
+    invoked from within
+"::HTE::Editor::destroyWindow 1"
+    ("eval" body line 1)
+    invoked from within
+"eval ::HTE::Editor::destroyWindow $args"
+    (procedure "HTE::Client::closeWindow" line 1)
+    invoked from within
+"HTE::Client::closeWindow $fid"
+    (procedure "closeTab" line 118)
+    invoked from within
+"closeTab $tabid $destroyFlag $noPrompt"
+    (procedure "::HTE::Editor::destroyWindow" line 48)
+    invoked from within
+"::HTE::Editor::destroyWindow 1"
+    ("eval" body line 1)
+    invoked from within
+"eval ::HTE::Editor::destroyWindow $args"
+    (procedure "::HTE::Client::closeWindow" line 1)
+    invoked from within
+"::HTE::Client::closeWindow 1"
+    (command for "WM_DELETE_WINDOW" window manager protocol)
+  <2: ::tkerror {can't read "cmdListsWinData(0,List|Windows,state)": no such element in array}
+  <1: ::bgerror {can't read "cmdListsWinData(0,List|Windows,state)": no such element in array}
+Wed Nov 28 19:45:58 ?????? 2018
+Trace back: can't read "cmdListsWinData(0,List|Windows,state)": no such element in array
+    while executing
+"linsert $cmdListsWinData($id,$cmdName,state) $clIdx 1"
+    (procedure "CmdControl::setCmdListItem" line 106)
+    invoked from within
+"CmdControl::setCmdListItem List|Windows $i $newListItem -insert"
+    (procedure "addToWindowList" line 24)
+    invoked from within
+"addToWindowList $frame_id"
+    (procedure "::HTE::Editor::createNewWindow" line 110)
+    invoked from within
+"::HTE::Editor::createNewWindow"
+    ("eval" body line 1)
+    invoked from within
+"eval ::HTE::Editor::createNewWindow $args"
+    (procedure "HTE::Client::openWindow" line 1)
+    invoked from within
+"HTE::Client::openWindow"
+    (procedure "HTE::API::weakOpenFile" line 52)
+    invoked from within
+"HTE::API::weakOpenFile [lindex $data 0]"
+    ("eval" body line 2)
+    invoked from within
+"eval $MIMEDropHandlers($type) "
+    ("copy" arm line 1)
+    invoked from within
+"switch -glob $action {
+      copy { eval $MIMEDropHandlers($type) }
+      move { eval $MIMEDropHandlers($type) }      
+   }"
+    (procedure "Drop" line 42)
+    invoked from within
+"Drop $tid copy $actions $type $win $X $Y $x $y $data"
+    (procedure "::HTE::Editor::DND::Win32Drop" line 26)
+    invoked from within
+"::HTE::Editor::DND::Win32Drop 0,0,u move copy text/uri-list .main_pane.source.interior.cs.body.editor.cs.panedWindow.f1.frame.paned.f0.frame.sw.tf.tex..."
+  <2: ::tkerror {can't read "cmdListsWinData(0,List|Windows,state)": no such element in array}
+  <1: ::bgerror {can't read "cmdListsWinData(0,List|Windows,state)": no such element in array}
+Wed Nov 28 19:46:01 ?????? 2018
+Trace back: can't read "cmdListsWinData(0,List|Windows,state)": no such element in array
+    while executing
+"lreplace $cmdListsWinData($id,$cmdName,state) $clIdx $clIdx"
+    (procedure "CmdControl::setCmdListItem" line 116)
+    invoked from within
+"CmdControl::setCmdListItem List|Windows $i {} -delete"
+    (procedure "deleteFromWindowList" line 14)
+    invoked from within
+"deleteFromWindowList $id"
+    (procedure "::HTE::Editor::destroyWindow" line 94)
+    invoked from within
+"::HTE::Editor::destroyWindow 1"
+    ("eval" body line 1)
+    invoked from within
+"eval ::HTE::Editor::destroyWindow $args"
+    (procedure "HTE::Client::closeWindow" line 1)
+    invoked from within
+"HTE::Client::closeWindow $fid"
+    (procedure "closeTab" line 118)
+    invoked from within
+"closeTab $tabid $destroyFlag $noPrompt"
+    (procedure "::HTE::Editor::destroyWindow" line 48)
+    invoked from within
+"::HTE::Editor::destroyWindow 1"
+    ("eval" body line 1)
+    invoked from within
+"eval ::HTE::Editor::destroyWindow $args"
+    (procedure "::HTE::Client::closeWindow" line 1)
+    invoked from within
+"::HTE::Client::closeWindow 1"
+    (command for "WM_DELETE_WINDOW" window manager protocol)
+  <2: ::tkerror {can't read "cmdListsWinData(0,List|Windows,state)": no such element in array}
+  <1: ::bgerror {can't read "cmdListsWinData(0,List|Windows,state)": no such element in array}

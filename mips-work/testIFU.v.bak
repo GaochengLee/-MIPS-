@@ -1,0 +1,25 @@
+module testIFU;
+
+  reg clk, reset, nPC_sel, zero, jumpCtr;
+  wire [31:0] ins;
+  reg [25:0] tarAddr;
+
+
+  ifu ifu1(clk, reset, nPC_sel, zero, ins, jumpCtr, tarAddr);
+
+  initial
+  begin
+    clk = 0;
+    reset = 0;
+    
+  end
+
+
+
+  always
+  begin
+    #20 clk =~ clk;
+    #20 reset =~ reset;
+  end
+
+endmodule

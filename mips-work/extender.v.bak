@@ -1,0 +1,7 @@
+module extender (din, dout, op);
+  input [15:0] din;
+  output [31:0] dout;
+  input [1:0] op;
+  
+  assign dout = (op && din[15]) == 1 ? {16'hffff, din} : {16'h0, din} 
+endmodule

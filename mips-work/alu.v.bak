@@ -1,0 +1,20 @@
+module alu(op, busa, busb, zero, dout);
+  input [3:0] op;
+  input [31:0] busa, busb;
+  output zero;
+  output reg [31:0] dout;
+  
+  assign zero = dout == 0 ? 1 : 0;
+  always @(op , busa, busb)
+  begin
+    case(op)
+        4'b0010 : dout = busa + busb;
+        4'b0110 : dout = busa - busb;
+        4'b0001 : dout = busa | busb;
+        4'b0111 : dout = busa & busb;
+        4'b0111 : dout = busa < busb ? 1 : 0;
+        
+    endcase
+  end
+endmodule
+                 
