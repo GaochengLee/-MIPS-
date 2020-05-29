@@ -1,5 +1,7 @@
 # -MIPS-
 
+==仅供参考==
+
 计算机组成原理 作业
 
 使用 moduleSim 仿真完成了测试
@@ -15,6 +17,3 @@
 6. sw
 7. beq
 8. j
-
-如果有帮助 点个星
-if it help you, please start.
